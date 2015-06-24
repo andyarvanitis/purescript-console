@@ -1,9 +1,10 @@
 {
   "name": "purescript-console",
   "homepage": "https://github.com/purescript/purescript-console",
-  "description": "Console-related functions",
+  "description": "Console-related functions and effect type for PureScript.",
   "keywords": [
-    "purescript"
+    "purescript",
+    "console"
   ],
   "license": "MIT",
   "repository": {
@@ -21,6 +22,6 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-eff": "~0.1.0"
+    "purescript-eff": "^0.1.0"
   }
 }
