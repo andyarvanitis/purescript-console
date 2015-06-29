@@ -12,12 +12,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 //
-#ifndef ControlMonadConsoleFFI_HH
-#define ControlMonadConsoleFFI_HH
+#ifndef ControlMonadEffConsoleFFI_HH
+#define ControlMonadEffConsoleFFI_HH
 
 #include "Purescript/Purescript.hh"
 
-namespace Control_Monad_Console {
+namespace Control_Monad_Eff_Console {
 
   using namespace PureScript;
 
@@ -30,4 +30,4 @@ namespace Control_Monad_Console {
 
 }
 
-#endif // ControlMonadConsoleFFI_HH
+#endif // ControlMonadEffConsoleFFI_HH
