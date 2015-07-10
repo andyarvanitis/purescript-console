@@ -16,6 +16,7 @@
 #define ControlMonadEffConsoleFFI_HH
 
 #include "Purescript/Purescript.hh"
+#include <iostream>
 
 namespace Control_Monad_Eff_Console {
 
@@ -23,7 +24,14 @@ namespace Control_Monad_Eff_Console {
 
   inline auto log(string s) -> eff_fn<Prelude::Unit> {
     return [=]() {
-      puts(s.c_str());
+      std::cout << s << std::endl;
+      return Prelude::unit;
+    };
+  }
+
+  inline auto error(string s) -> eff_fn<Prelude::Unit> {
+    return [=]() {
+      std::cerr << s << std::endl;
       return Prelude::unit;
     };
   }
