@@ -22,14 +22,14 @@ namespace Control_Monad_Eff_Console {
 
   using namespace PureScript;
 
-  inline auto log(string s) -> eff_fn<Prelude::Unit> {
+  inline auto log(const string& s) -> eff_fn<Prelude::Unit> {
     return [=]() {
       std::cout << s << std::endl;
       return Prelude::unit;
     };
   }
 
-  inline auto error(string s) -> eff_fn<Prelude::Unit> {
+  inline auto error(const string& s) -> eff_fn<Prelude::Unit> {
     return [=]() {
       std::cerr << s << std::endl;
       return Prelude::unit;
