@@ -15,7 +15,7 @@
 #ifndef ControlMonadEffConsoleFFI_HH
 #define ControlMonadEffConsoleFFI_HH
 
-#include "Purescript/Purescript.hh"
+#include "PureScript/PureScript.hh"
 #include <iostream>
 
 namespace Control_Monad_Eff_Console {
